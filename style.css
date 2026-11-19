@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border: 2px solid #aaa;
+}
+
+/* Top title area */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 80px;
+  padding: 12px;
+  background: #fff;
+  border-bottom: 3px solid #222;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(24px, 7vw, 48px);
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Green section fills the remaining space */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  flex: 1;
+  background: #27ce4b;
+}
+
+/* Empty space pushes the cookie box to the bottom */
+.green-area {
+  flex: 1;
+  align-self: stretch;
+}
+
+/* Black rectangle is also a flex container */
+.black-corner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 240px;
+  max-width: 100%;
+  padding: 16px;
+
+  background: #191919;
+  color: #fff;
+}
+
+/* Image left, close button right */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.card-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+}
+
+.close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.card-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.action-button {
+  width: 100%;
+  min-height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 12px 0 0 0;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid #59aaff;
+  outline-offset: 2px;
+}

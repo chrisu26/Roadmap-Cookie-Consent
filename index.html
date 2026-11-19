@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>This is a Cookies Consent Project</h1>
+    </header>
+
+    <main class="content">
+      <div class="green-area"></div>
+      <div id="popupConsent">
+      <div class="black-corner">
+        <div class="card-header">
+          <img
+            class="card-image"
+            src="cookiesShape.png"
+            alt="Cookie"
+          >
+
+          <button class="close-button" type="button" aria-label="Close">
+            ×
+          </button>
+        </div>
+
+        <p class="card-text">
+          We use cookies to improve your user experience.
+        </p>
+
+        <button class="action-button" type="button">
+          I like Cookies
+        </button>
+      </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
